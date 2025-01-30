@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    
+    <!-- Add this navigation bar at the top of the body -->
+  
+      
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">Kelechi Iwuagwu</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contributions">Social Impact</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+    
+    
+      
+    
+
+    <section id="hero">
+      <div class="slider">
+        <div class="slides">
+          <!-- Slide 1 -->
+          <div class="slide active">
+            <img src="photos/main3.jpg" alt="Slide 1">
+          </div>
+          <!-- Slide 2 -->
+          <div class="slide">
+            <img src="photos/main2.jpg" alt="Slide 2">
+          </div>
+          <!-- Slide 3 -->
+          <div class="slide">
+            <img src="photos/main1.jpg" alt="Slide 3">
+          </div>
+        </div>
+    
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <h1>Welcome, I'm Kelechi Iwuagwu</h1>
+          <p>Public Speaker | Data Analyst | Safety Director.</p>
+          <a href="#about-me" class="btn">Learn More</a>
+        </div>
+    
+        <!-- Navigation Arrows -->
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    
+        <!-- Dots Navigation -->
+        <div class="dots">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about-me">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="content">
+          <!-- Personal Background -->
+          <div class="section">
+            <h3>Personal Background</h3>
+            <p>
+              I am <strong>[Your Name]</strong>, a
+              <strong>[Your Profession/Role]</strong> based in
+              <strong>[Your Location]</strong>. My journey began in
+              <strong>[Brief Origin/Backstory]</strong>, where I developed an
+              early passion for <strong>[Key Interest or Trait]</strong>. This
+              passion has grown into a fulfilling career in
+              <strong>[Your Field]</strong>.
+            </p>
+          </div>
+
+          <!-- Education and Career Journey -->
+          <div class="section">
+            <h3>Education & Career Journey</h3>
+            <p>
+              I earned my <strong>[Degree]</strong> in
+              <strong>[Field of Study]</strong> from
+              <strong>[University Name]</strong>, where I gained a strong
+              foundation in <strong>[Skills/Knowledge Area]</strong>. My career
+              spans <strong>[Number]</strong> years, during which I have
+              collaborated with <strong>[Types of Companies]</strong> and honed
+              my skills in <strong>[Key Expertise]</strong>. Today, I specialize
+              in <strong>[Specific Focus]</strong>, helping
+              <strong>[Audience]</strong> achieve
+              <strong>[Goals or Outcomes]</strong>.
+            </p>
+          </div>
+
+          <!-- Personal Philosophy -->
+          <div class="section">
+            <h3>Personal Philosophy</h3>
+            <p>
+              I firmly believe in
+              <strong>[Your Philosophy or Core Value]</strong>. My work is
+              guided by a commitment to <strong>[Key Values]</strong>, and I
+              strive to <strong>[Your Mission or Professional Goal]</strong>.
+            </p>
+          </div>
+
+          <!-- Hobbies and Interests -->
+          <div class="section">
+            <h3>Hobbies & Interests</h3>
+            <p>
+              When I’m not <strong>[Your Professional Activity]</strong>, you
+              can find me <strong>[Hobby or Interest]</strong>. I’m also
+              passionate about <strong>[Other Personal Interests]</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+<section id="services">
+    <section id="roles">
+      <div class="container">
+        <h2>What I Do</h2>
+        <div class="card-container">
+          <!-- Public Speaker Card -->
+          <div class="card public-speaker" data-aos="fade-up">
+            <img src="photos/public1.jpg" alt="Public Speaking" />
+            <div class="card-content">
+              <h3>Public Speaker</h3>
+              <p>
+                Engaging audiences worldwide with insights on leadership,
+                motivation, and innovation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Data Analyst Card -->
+          <div
+            class="card data-analyst"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img src="photos/public10.jpg" alt="Data Analytics" />
+            <div class="card-content">
+              <h3>Data Analyst</h3>
+              <p>
+                Transforming data into actionable insights to optimize processes
+                and drive strategic decision-making.
+              </p>
+            </div>
+          </div>
+
+          <!-- Safety Director Card -->
+          <div
+            class="card safety-director"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img src="photos/group1.jpg" alt="Safety Director" />
+            <div class="card-content">
+              <h3>Safety Director</h3>
+              <p>
+                Leading initiatives to ensure workplace safety, compliance, and
+                a culture of prevention.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise -->
+    <section id="expertise">
+      <div class="container">
+        
+        <p class="intro-text">
+          Visualizing my skills and areas of expertise with a radial breakdown.
+        </p>
+        <div class="radial-graph">
+          <!-- Public Speaking -->
+          <div class="radial">
+            <div class="circle" data-percentage="92">
+              <span>92%</span>
+            </div>
+            <p>Public Speaking</p>
+          </div>
+    
+          <!-- Data Analysis -->
+          <div class="radial">
+            <div class="circle" data-percentage="85">
+              <span>85%</span>
+            </div>
+            <p>Data Analysis</p>
+          </div>
+    
+          <!-- Workplace Safety -->
+          <div class="radial">
+            <div class="circle" data-percentage="80">
+              <span>80%</span>
+            </div>
+            <p>Workplace Safety</p>
+          </div>
+    
+          <!-- Leadership -->
+          <div class="radial">
+            <div class="circle" data-percentage="90">
+              <span>90%</span>
+            </div>
+            <p>Leadership</p>
+          </div>
+        </div>
+      </div>
+    </section></sectiion>
+    <!-- contributions to society -->
+    <section id="contributions">
+      <div class="container">
+        <h2>Contribution to Society</h2>
+        <p class="intro-text">
+          Making a difference through active participation in charitable events,
+          community engagement, and public initiatives.
+        </p>
+        <div class="card-container">
+          <!-- Example Card with Modal Trigger -->
+          <div
+            class="card charitable-events"
+          >
+            <img src="photos/publicservice1.jpg" alt="Charitable Events" />
+            <div class="card-content">
+              <h3>Charitable Events</h3>
+              <p>
+                Organized and participated in fundraising events to support
+                underprivileged communities and disaster relief programs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Community Engagement Card -->
+          <div
+            class="card community-engagement"
+          >
+            <img src="photos/public1.jpg" alt="Community Engagement" />
+            <div class="card-content">
+              <h3>Community Engagement</h3>
+              <p>
+                Led workshops and initiatives aimed at empowering local
+                communities through education, awareness, and skill-building
+                programs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Public Initiatives Card -->
+          <div
+            class="card public-initiatives"
+          >
+            <img src="photos/publicservice2.jpg" alt="Public Initiatives" />
+            <div class="card-content">
+              <h3>Public Initiatives</h3>
+              <p>
+                Actively involved in campaigns promoting sustainability, public
+                health, and inclusivity to create a lasting impact on society.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <h2>My Work & Accomplishments</h2>
+        <p class="intro-text">
+          A showcase of my key projects, speaking engagements, and contributions in public speaking, data analysis, and safety leadership.
+        </p>
+    
+        <div class="portfolio-grid">
+          <!-- Speaking Engagement -->
+          <div class="portfolio-item">
+            <img src="photos/group1.jpg" alt="Keynote Speech at Data Summit">
+            <div class="portfolio-content">
+              <h3>Keynote Speaker at Data Summit 2023</h3>
+              <p>Delivered a talk on "The Future of AI in Workplace Safety" at the Global Data Summit.</p>
+              <a href="video-link.com" class="btn">Watch Speech</a>
+            </div>
+          </div>
+    
+          <!-- Data Project -->
+          <div class="portfolio-item">
+            <img src="photos/1000019641.jpg" alt="Data Analytics Report">
+            <div class="portfolio-content">
+              <h3>Workplace Risk Analysis Report</h3>
+              <p>Analyzed workplace injury trends using machine learning to improve safety protocols.</p>
+              <a href="report-link.com" class="btn">View Report</a>
+            </div>
+          </div>
+    
+          <!-- Safety Initiative -->
+          <div class="portfolio-item">
+            <img src="photos/publicservice2.jpg" alt="Workplace Safety Training">
+            <div class="portfolio-content">
+              <h3>Safety Training Program</h3>
+              <p>Developed an industry-standard training program that reduced workplace accidents by 30%.</p>
+              <a href="details-link.com" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+
+ <section id="notable-encounters">
+  <div class="container">
+    <h2>Notable Encounters</h2>
+    <p class="intro-text">
+      A glimpse of the distinguished individuals I've had the honor to meet, including former prime ministers, governors, and other esteemed leaders.
+    </p>
+    <div class="gallery">
+      <!-- Encounter 1 -->
+      <div class="photo-card">
+        <img src="photos/public7.jpg" alt="">
+        <div class="caption">
+          <h3>John Doe</h3>
+          <p>Former Prime Minister of [Country]</p>
+        </div>
+      </div>
+
+      <!-- Encounter 2 -->
+      <div class="photo-card">
+        <img src="photos/public8.jpg" alt="">
+        <div class="caption">
+          <h3>Jane Smith</h3>
+          <p>Governor of [State]</p>
+        </div>
+      </div>
+
+      <!-- Additional Photos (Initially Hidden) -->
+      <div class="photo-card hidden">
+        <img src="photos/public9.jpg" alt="Meeting with Michael Brown">
+        <div class="caption">
+          <h3>Michael Brown</h3>
+          <p>CEO of [Organization]</p>
+        </div>
+      </div>
+
+      <div class="photo-card hidden">
+        <img src="photos/public10.jpg" alt="Meeting with Sarah Johnson">
+        <div class="caption">
+          <h3>Sarah Johnson</h3>
+          <p>Senator of [Region]</p>
+        </div>
+      </div>
+    </div>
+    <button id="see-more" class="btn">See More</button>
+  </div>
+</section>
+<section id="testimonials">
+  <div class="container">
+    <h2>What People Say</h2>
+
+    <div class="testimonial">
+      <p class="quote">
+        "An inspiring speaker with deep knowledge in his field. His insights into leadership and safety management are invaluable!"
+      </p>
+      <div class="author">
+        <img src="photos/1000019641.jpg" alt="John Doe">
+        <div class="author-info">
+          <h3>John Doe</h3>
+          <p>CEO, XYZ Company</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <p class="quote">
+        "His expertise in data analysis transformed the way our company makes decisions. A true professional."
+      </p>
+      <div class="author">
+        <img src="photos/1000019644.jpg" alt="Jane Smith">
+        <div class="author-info">
+          <h3>Jane Smith</h3>
+          <p>Data Scientist, ABC Corp</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <p class="quote">
+        "A remarkable public speaker who engages audiences effortlessly. His sessions are insightful and motivating!"
+      </p>
+      <div class="author">
+        <img src="photos/group1.jpg" alt="Michael Brown">
+        <div class="author-info">
+          <h3>Michael Brown</h3>
+          <p>Conference Organizer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <p class="intro-text">
+      Whether you're looking to collaborate, book a speaking engagement, or simply reach out, I’d love to hear from you.
+    </p>
+
+    <div class="contact-options">
+      <!-- Contact Form -->
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="inquiry-type">Reason for Contact</label>
+          <select id="inquiry-type" name="inquiry-type" required>
+            <option value="general">General Inquiry</option>
+            <option value="job">Job Opportunity</option>
+            <option value="collaboration">Collaboration</option>
+            <option value="speaking">Speaking Engagement</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <!-- Direct Contact Details -->
+      <div class="direct-contact">
+        <h3>Contact Information</h3>
+        <p><strong>Email:</strong> <a href="mailto:contact@example.com">contact@example.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+123456789">+123 456 789</a></p>
+        <p><strong>Socials:</strong></p>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/example" target="_blank">LinkedIn</a>
+          <a href="https://twitter.com/example" target="_blank">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-content">
+    <!-- Footer Logo & About -->
+    <div class="footer-about">
+      <h3>Kelechi Iwuagwu</h3>
+      <p>Helping businesses and individuals excel through expertise in public speaking, data analysis, and safety management.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p><strong>Email:</strong> <a href="mailto:contact@example.com">contact@example.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+123456789">+123 456 789</a></p>
+      <p><strong>Follow:</strong></p>
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/example" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/example" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://facebook.com/example" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <p>&copy; 2024 Kelechi Iwuagwu. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  
+<script src="script.js"></script>
+<script src="nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  
+
+   
+  </body>
+</html>
