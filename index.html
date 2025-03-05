@@ -3,141 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio</title>
+    <title>Kelechi Iwuagwu Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="default.css">
+    <!-- Google Fonts -->
+<link href="https://api.fontshare.com/v2/css?f=satoshi@400,500,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   </head>
   <body>
     
-    <!-- Add this navigation bar at the top of the body -->
-  
-      
     <header>
       <nav class="navbar">
-        <div class="logo">
-          <a href="#">Kelechi Iwuagwu</a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contributions">Social Impact</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+          <div class="logo">
+              <a href="#">Kelechi</a>
+          </div>
+          <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
       </nav>
-    </header>
+  </header>
+  
+  
+      
+  
     
     
       
     
 
-    <section id="hero">
-      <div class="slider">
-        <div class="slides">
-          <!-- Slide 1 -->
-          <div class="slide active">
-            <img src="photos/main3.jpg" alt="Slide 1">
-          </div>
-          <!-- Slide 2 -->
-          <div class="slide">
-            <img src="photos/main2.jpg" alt="Slide 2">
-          </div>
-          <!-- Slide 3 -->
-          <div class="slide">
-            <img src="photos/main1.jpg" alt="Slide 3">
-          </div>
-        </div>
-    
-        <!-- Hero Text Content -->
-        <div class="hero-content">
-          <h1>Welcome, I'm Kelechi Iwuagwu</h1>
-          <p>Public Speaker | Data Analyst | Safety Director.</p>
-          <a href="#about-me" class="btn">Learn More</a>
-        </div>
-    
-        <!-- Navigation Arrows -->
-        <button class="prev" onclick="prevSlide()">&#10094;</button>
-        <button class="next" onclick="nextSlide()">&#10095;</button>
-    
-        <!-- Dots Navigation -->
-        <div class="dots">
-          <span class="dot active" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
+  <section id="hero">
+    <div class="slider">
+        <div class="slide active" style="background-image: url('photos/main3.jpg');"></div>
+        <div class="slide" style="background-image: url('photos/main2.jpg');"></div>
+        <div class="slide" style="background-image: url('photos/main1.jpg');"></div>
+    </div>
+
+    <div class="hero-content">
+      <h1 id="typing-text"></h1>
+        <p>Helping individuals and organizations excel.</p>
+        <a href="#about" class="btn">Learn More</a>
+    </div>
+
+    <div class="scroll-indicator">
+      <!-- <span>&#8595;</span>  Unicode down arrow -->
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+    </div>
+</section>
+
+
+<section id="about">
+  <div class="about-container">
+      <div class="about-image">
+          <img src="photos/main1.jpg" alt="About Me">
       </div>
-    </section>
-    
-
-    <!-- About Section -->
-    <section id="about-me">
-      <div class="container">
-        <h2>About Me</h2>
-        <div class="content">
-          <!-- Personal Background -->
-          <div class="section">
-            <h3>Personal Background</h3>
-            <p>
-              I am <strong>[Your Name]</strong>, a
-              <strong>[Your Profession/Role]</strong> based in
-              <strong>[Your Location]</strong>. My journey began in
-              <strong>[Brief Origin/Backstory]</strong>, where I developed an
-              early passion for <strong>[Key Interest or Trait]</strong>. This
-              passion has grown into a fulfilling career in
-              <strong>[Your Field]</strong>.
-            </p>
-          </div>
-
-          <!-- Education and Career Journey -->
-          <div class="section">
-            <h3>Education & Career Journey</h3>
-            <p>
-              I earned my <strong>[Degree]</strong> in
-              <strong>[Field of Study]</strong> from
-              <strong>[University Name]</strong>, where I gained a strong
-              foundation in <strong>[Skills/Knowledge Area]</strong>. My career
-              spans <strong>[Number]</strong> years, during which I have
-              collaborated with <strong>[Types of Companies]</strong> and honed
-              my skills in <strong>[Key Expertise]</strong>. Today, I specialize
-              in <strong>[Specific Focus]</strong>, helping
-              <strong>[Audience]</strong> achieve
-              <strong>[Goals or Outcomes]</strong>.
-            </p>
-          </div>
-
-          <!-- Personal Philosophy -->
-          <div class="section">
-            <h3>Personal Philosophy</h3>
-            <p>
-              I firmly believe in
-              <strong>[Your Philosophy or Core Value]</strong>. My work is
-              guided by a commitment to <strong>[Key Values]</strong>, and I
-              strive to <strong>[Your Mission or Professional Goal]</strong>.
-            </p>
-          </div>
-
-          <!-- Hobbies and Interests -->
-          <div class="section">
-            <h3>Hobbies & Interests</h3>
-            <p>
-              When I’m not <strong>[Your Professional Activity]</strong>, you
-              can find me <strong>[Hobby or Interest]</strong>. I’m also
-              passionate about <strong>[Other Personal Interests]</strong>.
-            </p>
-          </div>
-        </div>
+      <div class="about-content">
+          <h2>About <span class="highlight">Me</span></h2>
+          <p>
+              I'm a passionate <span class="highlight">public speaker</span>, <span class="highlight">data analyst</span>, 
+              and <span class="highlight">safety director</span> dedicated to making a difference. 
+              With years of experience in the industry, I help individuals and organizations 
+              <span class="highlight">excel</span> in their respective fields.
+          </p>
+          <p>
+              Whether it's through <span class="highlight">powerful storytelling</span>, 
+              <span class="highlight">insightful data analysis</span>, or <span class="highlight">strategic safety leadership</span>, 
+              I strive to <span class="highlight">inspire</span> and drive impactful change.
+          </p>
+          <a href="#contact" class="btn">Let's Connect</a>
       </div>
-    </section>
+  </div>
+</section>
+
+
+
+  
 <section id="services">
-    <section id="roles">
+    <section id="roles" class="animate">
       <div class="container">
         <h2>What I Do</h2>
         <div class="card-container">
@@ -230,7 +183,7 @@
       </div>
     </section></sectiion>
     <!-- contributions to society -->
-    <section id="contributions">
+    <section id="contributions"  class="animate">
       <div class="container">
         <h2>Contribution to Society</h2>
         <p class="intro-text">
@@ -328,7 +281,7 @@
 
 
 
- <section id="notable-encounters">
+ <section id="notable-encounters"  class="animate">
   <div class="container">
     <h2>Notable Encounters</h2>
     <p class="intro-text">
@@ -373,7 +326,7 @@
     <button id="see-more" class="btn">See More</button>
   </div>
 </section>
-<section id="testimonials">
+<section id="testimonials"  class="animate">
   <div class="container">
     <h2>What People Say</h2>
 
@@ -510,11 +463,14 @@
     <p>&copy; 2024 Kelechi Iwuagwu. All Rights Reserved.</p>
   </div>
 </footer>
-
-  
+<script src="hero.js"></script>
 <script src="script.js"></script>
 <script src="nav.js"></script>
+<script src="animation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
 
   
 

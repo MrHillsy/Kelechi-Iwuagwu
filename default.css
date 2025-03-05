@@ -1,0 +1,180 @@
+body {
+    
+    line-height: 1.6;
+    width: 100%;
+    
+}
+:root {
+  --primary-color: #0d0d0d; /* Darker but soft black */
+  --secondary-color: #666; /* Lighter gray */
+  --accent-color: #58a6ff; /* Subtle blue like VideoNotebook */
+  --background-color: #f5f5f5; /* Light, modern background */
+}
+
+/* Apply Background & Colors */
+body {
+  background: var(--background-color);
+  color: var(--secondary-color);
+}
+
+
+/* Global Reset */
+
+  /* Apply Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Headings - Use Satoshi */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* Body Text - Use Inter */
+p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Adjust Font Sizes */
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+
+  /* Global Section Padding */
+/* Default Section Padding (for larger screens) */
+section{ }
+section p{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Hide Sections Before Scroll */
+.animate {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px); /* Push it down slightly for smooth animation */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Adjust for Tablets */
+@media (max-width: 1024px) {
+    section {
+        padding: 4rem 5%;
+    }
+}
+
+/* Adjust for Mobile Screens */
+@media (max-width: 768px) {
+    section {
+        padding: 3rem 5%;
+    }
+}
+
+
+/* Improve Spacing */
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+p {
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+/* Headings */
+h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);  /* Scales between 2.5rem and 3.5rem */
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 700;
+}
+
+h3 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+/* Body Text */
+p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Buttons */
+/* Universal Button */
+.btn {
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background: linear-gradient(90deg, #2575fc, #6a11cb); /* Smooth gradient */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effect - Subtle Glow */
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(106, 17, 203, 0.5);
+}
+
+/* Active Effect - Pressed Look */
+.btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 4px 10px rgba(106, 17, 203, 0.5);
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive Videos */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+html {
+    font-size: 100%; /* Ensures text scales properly */
+}
+
+body {
+    min-width: 320px; /* Prevents layout from collapsing on very small screens */
+}
+
+/* Prevent Large Text from Overlapping */
+h1, h2, h3, p {
+    word-wrap: break-word;
+}

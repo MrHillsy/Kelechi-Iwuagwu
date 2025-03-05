@@ -1,5 +1,3 @@
-
-
 // Ensure the DOM is fully loaded before adding event listeners
 document.addEventListener('DOMContentLoaded', () => {
     
@@ -53,7 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
         seeMoreButton.textContent = seeMoreButton.textContent === "See More" ? "See Less" : "See More";
         console.log(`See More button clicked: ${seeMoreButton.textContent}`); // Debugging log
     });
+
+    // Hero Section Animations
+    gsap.to(".hero-content h1", { opacity: 1, y: 0, duration: 1, delay: 0.5, ease: "power2.out" });
+    gsap.to(".hero-content p", { opacity: 1, y: 0, duration: 1, delay: 0.8, ease: "power2.out" });
+    gsap.to(".hero-content .btn", { opacity: 1, y: 0, duration: 1, delay: 1.2, ease: "power2.out" });
 });
+
+// Ensure GSAP is correctly included and no errors are present
 let currentIndex = 0;
 const slides = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
