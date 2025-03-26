@@ -1,3 +1,15 @@
+body{
+    font: 16px 'Inter', sans-serif;
+    background: #f8f9fa;
+
+    max-width: 1200px;
+    width: 90%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
 .contact-section {
     padding: 60px 20px;
     background: #f8f9fa;
