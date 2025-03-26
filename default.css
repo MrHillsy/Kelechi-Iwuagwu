@@ -9,6 +9,7 @@ body {
   --secondary-color: #666; /* Lighter gray */
   --accent-color: #58a6ff; /* Subtle blue like VideoNotebook */
   --background-color: #f5f5f5; /* Light, modern background */
+  --footer-color: #6a11cb ; /* Darker gray for footer */
 }
 
 /* Apply Background & Colors */
@@ -34,7 +35,13 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Satoshi', sans-serif;
   font-weight: 700;
-  color: #1a1a1a;
+ 
+}
+h2{
+    color: #2575fc !important;
+}
+h3{
+    color: #6a11cb !important;
 }
 
 /* Body Text - Use Inter */
@@ -50,7 +57,9 @@ h3 { font-size: 2rem; }
 
   /* Global Section Padding */
 /* Default Section Padding (for larger screens) */
-section{ }
+section{ 
+    width: 100%;
+}
 section p{
     text-align: center;
     max-width: 800px;
@@ -65,18 +74,6 @@ section p{
 }
 
 /* Adjust for Tablets */
-@media (max-width: 1024px) {
-    section {
-        padding: 4rem 5%;
-    }
-}
-
-/* Adjust for Mobile Screens */
-@media (max-width: 768px) {
-    section {
-        padding: 3rem 5%;
-    }
-}
 
 
 /* Improve Spacing */
@@ -112,37 +109,57 @@ p {
 }
 
 /* Buttons */
-/* Universal Button */
 .btn {
-    padding: 12px 28px;
-    font-size: 1.1rem;
+    padding: 8px 20px; /* Reduced padding for smaller size */
+    font-size: 0.9rem; /* Slightly smaller font size */
     font-weight: bold;
+    font-family: inherit;
     text-transform: uppercase;
     color: white;
     background: linear-gradient(90deg, #2575fc, #6a11cb); /* Smooth gradient */
     border: none;
-    border-radius: 8px;
+    border-radius: 20px; /* More curved edges */
     cursor: pointer;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
 }
 
-/* Hover Effect - Subtle Glow */
+/* Hover effect */
 .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(106, 17, 203, 0.5);
+    transform: scale(1.05); /* Slight enlargement on hover */
+    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Reverse gradient */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Active Effect - Pressed Look */
-.btn:active {
-    transform: scale(0.98);
-    box-shadow: 0 4px 10px rgba(106, 17, 203, 0.5);
+/* Optional: Adding a slight glow effect */
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.15);
+    transition: all 0.5s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    text-decoration: none;
 }
+
+.btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+}
+
+
+
+
 
 /* Responsive Images */
 img {
@@ -171,7 +188,8 @@ html {
 }
 
 body {
-    min-width: 320px; /* Prevents layout from collapsing on very small screens */
+    min-width: 320px;
+    width: 100%; /* Prevents layout from collapsing on very small screens */
 }
 
 /* Prevent Large Text from Overlapping */
